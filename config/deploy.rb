@@ -2,15 +2,15 @@ require 'capistrano_colors'
 require 'bundler/capistrano'
 
 # Configurando o servidor
-set :domain, "projeto.designa.com.br"
-set :application, "projeto"
+set :domain, "173.230.141.160"
+set :application, "querolegenda.com.br"
 set :user, "railsapps"
 set :use_sudo, false
 set :deploy_to, "/home/#{user}/#{application}"
 
 # Configurando o repositório
 server domain, :app, :web, :db, :primary => true
-set :repository,  "git@bitbucket.org:jmscarpa/DesignaDefault.git"
+set :repository,  "git@bitbucket.org:jmscarpa/youtube-developer-day.git"
 set :scm, :git
 set :keep_releases, 5
 ssh_options[:forward_agent] = true

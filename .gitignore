@@ -12,7 +12,6 @@
 /tmp
 
 # Temp files
-.DS_Store
 .sw*
 .sv*
 .su*

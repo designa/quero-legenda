@@ -6240,3 +6240,14 @@ ActionController::RoutingError (No route matches [GET] "/assets/font-awesome/css
   Rendered /Users/jmscarpa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
   Rendered /Users/jmscarpa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
   Rendered /Users/jmscarpa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.6ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 18:54:27 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (532.2ms)
+  Rendered shared/_footer.html.erb (158.7ms)
+Completed 200 OK in 1322ms (Views: 1268.2ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 18:56:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (8.5ms)
+  Rendered shared/_footer.html.erb (16.4ms)
+Completed 200 OK in 345ms (Views: 344.2ms | ActiveRecord: 0.0ms)

@@ -1,5 +1,9 @@
 class SubtitlesController < ApplicationController
-  
+
+  def index
+    @subtitles = Subtitle.all(limit: 10)
+  end
+
   def new
     @subtitle = Subtitle.new(url: params[:subtitle][:url], language: params[:subtitle][:language])
   end

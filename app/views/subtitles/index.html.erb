@@ -1,0 +1,23 @@
+<%= render "shared/header" %>
+ <br><br>
+ <h1> Últimas 10 Legendas solicitadas </h1>
+<div class="container">
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Vídeo</th>
+      <th>Email</th>
+      <th>Idioma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @subtitles.each do |subtitle| %>
+    <tr>
+      <td><%= subtitle.url %></td>
+      <td><%= subtitle.email %></td>
+      <td><%= subtitle.language %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

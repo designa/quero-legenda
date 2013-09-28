@@ -4,6 +4,8 @@ DesignaDefault::Application.routes.draw do
   get "/buscar", to: "searchs#index", as: :search_video
   post "/buscar", to: "searchs#result", as: :search_result
 
+  get "/legendas-pedidas", to: "subtitles#index", as: :subtitles
+
   post "/legenda-ai", to: "subtitles#new", as: :new_subtitles
   post "/obrigado", to: "subtitles#create", as: :create_new_subtitles
 

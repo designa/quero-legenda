@@ -8,6 +8,13 @@
 .address-area {
   background: darken($color-4, 10%);
 }
+.link-social{
+  color:#ffffff;
+}
+.link-social:hover{
+  color:#ecf0f1;
+  text-decoration: none;
+}
 .address-item {
   padding: 36px 12px 24px;
   .text-contact,

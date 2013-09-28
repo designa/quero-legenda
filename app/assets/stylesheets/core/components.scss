@@ -1,4 +1,5 @@
 .box-title {
+  margin: 0 0 24px 0;
   .main-title, .sub-title {
     font-weight: 400;
     margin: 0;
@@ -6,7 +7,6 @@
   .main-title {
     font-size: 2.4em;
     line-height: 1.2;
-    margin: 0 0 24px 0;
     strong {
       color: $color-2;
     }

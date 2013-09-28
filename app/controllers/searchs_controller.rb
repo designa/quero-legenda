@@ -12,7 +12,7 @@ class SearchsController < ApplicationController
   protected
 
   def get_results(title)
-    @videos = YoutubeSearch.search(title,  orderby: 'viewCount', page: 10, per_page: 10)
+    @videos = CLIENT.videos_by(query: title)
   end
 
 end

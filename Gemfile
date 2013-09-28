@@ -11,6 +11,7 @@ gem "delocalize", :git => "git://github.com/wanchic/delocalize.git", :branch => 
 gem "active_decorator"
 gem "delayed_job_active_record"
 gem "daemons"
+gem 'youtube_it'
 gem "will_paginate"
 gem "youtube_search"
 

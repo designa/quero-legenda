@@ -1,6 +1,7 @@
-<%= content_tag :h3, "We've found #{@videos.size.to_s} with #{@title}" %>
+<%= content_tag :h3, "Showing #{@videos.videos.size.to_s} results for #{@title}" %>
 
-<% @videos.each do |v| %>
-  <%= link_to v["title"], "http://youtube.com/watch?v=#{v['video_id']}", target: "_blank" %> <br>
-  <iframe src="//www.youtube.com/embed/#{v['video_id']}" width='320' height='240' frameborder=0></iframe> <br>
+<% @videos.videos.each do |v| %>
+ <%= v.title %> <br>
+ <%= image_tag(v.thumbnails.first.url) %> <br>
+ <%#= v.methods %>
 <% end %>

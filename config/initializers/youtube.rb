@@ -1,3 +1,5 @@
 DEVELOPER_KEY = "AIzaSyCS-iiCgZ1yxvkfDXW364ViPJ-bKPk2IKQ"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
+
+CLIENT = YouTubeIt::Client.new(:dev_key => DEVELOPER_KEY)

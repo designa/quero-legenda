@@ -63,11 +63,7 @@
             <%= simple_form_for @subtitle, url: :new_subtitles do |f| %>
               <%= f.input :url, input_html: { value: video.unique_id }, as: :hidden %>
               <%= f.input :language, label: false, collection: ["Português","Inglês","Francês"], default: 1, input_html: {id: "language"} %>
-<<<<<<< Updated upstream
               <%= f.submit "Quero legenda!", class: "btn btn-primary" %>
-=======
-              <%= f.submit "Eu quero legenda!", class: "btn btn-primary" %>
->>>>>>> Stashed changes
           <% end %>
             </div>
           </article>

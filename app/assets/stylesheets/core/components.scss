@@ -5,6 +5,9 @@
   }
   .main-title {
     font-size: 2.4em;
+    strong {
+      color: $color-2;
+    }
   }
   .sub-title {
     color: lighten($black, 50%);

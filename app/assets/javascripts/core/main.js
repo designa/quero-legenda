@@ -6,7 +6,7 @@ var App = function($, d, w) {
   that.w = w;
 };
 
-Shibata.prototype.init = function() {
+App.prototype.init = function() {
   var that = this;
 
   that.$(function() {

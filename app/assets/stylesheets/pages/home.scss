@@ -11,6 +11,16 @@ body {
 
 .default-banner {
   height: 700px;
+  position: relative;
+}
+.help-translate {
+  background-color: $color-2;
+  bottom: 0;
+  color: $whiteClouds;
+  left: 0;
+  margin: 0 0 128px 0;
+  padding: 12px 12px 12px 64px;
+  position: absolute;
 }
 
 .welcome .default-banner {
@@ -19,22 +29,23 @@ body {
 }
 
 .default-access {
-  background-color: $redCorset;
+  background-color: $whiteClouds;
 }
 
 .def-link {
-  color: $white;
+  color: $color-3;
   display: block;
   height: 255px;
   margin: 0 auto;
   padding: 24px;
   text-align: center;
   .def-link-desc {
+    color: $color-3;
     font-size: 16px;
   }
   &:hover {
-    background: rgba(255, 255, 255, .1);
-    color: darken($white, 5%);
+    background: darken($whiteClouds, 5%);
+    color: lighten($color-2, 15%);
     text-decoration: none;
   }
   &:before {
@@ -55,7 +66,16 @@ body {
 
 .start-now {
   @extend %section-padding;
-  background-color: darken($white, 5%);
+  background-color: $color-2;
+  .main-title {
+    color: $whiteClouds;
+    strong {
+      color: $color-1;
+    }
+  }
+  .sub-title {
+    color: darken($whiteClouds, 15%);
+  }
   .def-badge {
     margin: 0 auto;
     width: 100%;

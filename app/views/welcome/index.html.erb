@@ -1,17 +1,19 @@
-<div class="default-banner"></div>
+<div class="default-banner">
+  <h2 class="help-translate">Cada legenda, uma nova língua.</h2>
+</div>
 
 <section class="row-fluid default-access">
   <div class="container">
     <div class="span6">
       <a href="#" class="def-link gift-file">
-        <%= content_tag :h2, t("welcome.title") %>
-        <%= content_tag :p, t("welcome.lorem") %>
+        <h2>Quero uma legenda</h2>
+        <p class="def-link-desc"><%= t("welcome.lorem") %></p>
       </a>
     </div>
     <div class="span6">
       <a href="#" class="def-link gift-search">
-        <%= content_tag :h2, t("welcome.title") %>
-        <%= content_tag :p, t("welcome.lorem") %>
+        <h2>Quero legendar</h2>
+        <p class="def-link-desc"><%= t("welcome.lorem") %></p>
       </a>
     </div>
   </div>
@@ -21,14 +23,14 @@
   <div class="container">
     <div class="span6 offset1">
       <header class="box-title">
-        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
-        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
+        <h2 class="main-title">Aprimore sua <strong>língua</strong></h2>
+        <h3 class="sub-title">veja como é possível</h3>
       </header>
       <section>
         <%= content_tag :p, t("welcome.lorem") %>
       </section>
       <footer>
-      <%= link_to t("welcome.call_to_action"), nil, class: "btn btn-large" %>
+      <%= link_to "Ver os vídeos", nil, class: "btn btn-success btn-large" %>
       </footer>
     </div>
   </div>
@@ -36,31 +38,61 @@
 
 <section class="row-fluid start-now">
   <div class="container">
-    <div class="span6">
+    <div class="span12">
       <header class="box-title">
-        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
-        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
+        <h2 class="main-title">Mais acessados <strong>sem legenda</strong></h2>
+        <h3 class="sub-title">Que tal começar a traduzir esses?</h3>
       </header>
-      <section>
-        <%= content_tag :p, t("welcome.lorem") %>
+      <section class="videos-most-accessed">
+        <article class="video-item">
+          <a href="http://youtube.com/watch?v=VJ-rkmbRj30"><h4 class="video-name">Maps Live: Visualizing Correlations: Big Query and Maps</h4></a>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/VJ-rkmbRj30" frameborder="0" allowfullscreen></iframe>
+          <ul class="inline">
+            <li>
+              <select name="language" id="language">
+                <option value="fr">Francês</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="eua">Inglês (EUA)</option>
+              </select>
+            </li>
+            <li>
+              <a href="" class="btn btn-primary">Quero legenda!</a>
+            </li>
+          </ul>
+        </article>
+        <article class="video-item">
+          <a href="http://youtube.com/watch?v=VJ-rkmbRj30"><h4 class="video-name">Maps Live: Visualizing Correlations: Big Query and Maps</h4></a>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/VJ-rkmbRj30" frameborder="0" allowfullscreen></iframe>
+          <ul class="inline">
+            <li>
+              <select name="language" id="language">
+                <option value="fr">Francês</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="eua">Inglês (EUA)</option>
+              </select>
+            </li>
+            <li>
+              <a href="" class="btn btn-primary">Quero legenda!</a>
+            </li>
+          </ul>
+        </article>
+        <article class="video-item">
+          <a href="http://youtube.com/watch?v=VJ-rkmbRj30"><h4 class="video-name">Maps Live: Visualizing Correlations: Big Query and Maps</h4></a>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/VJ-rkmbRj30" frameborder="0" allowfullscreen></iframe>
+          <ul class="inline">
+            <li>
+              <select name="language" id="language">
+                <option value="fr">Francês</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="eua">Inglês (EUA)</option>
+              </select>
+            </li>
+            <li>
+              <a href="" class="btn btn-primary">Quero legenda!</a>
+            </li>
+          </ul>
+        </article>
       </section>
-      <div class="row-fluid">
-        <div class="span6">
-        </div>
-        <div class="span6">
-        </div>
-      </div>
-    </div>
-    <div class="span6">
-      <header class="box-title">
-        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
-        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
-      </header>
-      <div class="box-tips">
-        <div class="box-desc">
-          <%= content_tag :p, t("welcome.lorem") %>
-        </div>
-      </div>
     </div>
   </div>
 </section>

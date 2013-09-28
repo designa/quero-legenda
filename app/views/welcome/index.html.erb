@@ -63,12 +63,11 @@
               </div>
             </div>
             <div class="video-enroll">
-              <select name="language" id="language">
-                <option value="fr">Francês</option>
-                <option value="pt-BR">Português (Brasil)</option>
-                <option value="eua">Inglês (EUA)</option>
-              </select>
-              <a href="" class="btn btn-primary">Quero legenda!</a>
+            <%= simple_form_for @subtitle, url: :new_subtitles do |f| %>
+              <%= f.input :url, input_html: { value: video.unique_id }, as: :hidden %>
+              <%= f.input :language, label: false, collection: ["Português","Inglês","Francês"], default: 1, input_html: {id: "language"} %>
+              <%= f.submit "Eu quero legenda!", class: "btn btn-primary" %>       
+          <% end %>
             </div>
           </article>
         <% end %>

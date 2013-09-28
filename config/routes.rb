@@ -1,6 +1,10 @@
 DesignaDefault::Application.routes.draw do
   root to: "welcome#index"
 
-  get "/search", to: "searchs#index", as: :search_video
-  post "/search", to: "searchs#result", as: :search_result
+  get "/buscar", to: "searchs#index", as: :search_video
+  post "/buscar", to: "searchs#result", as: :search_result
+
+  post "/legenda-ai", to: "subtitles#new", as: :new_subtitles
+  post "/obrigado", to: "subtitles#create", as: :create_new_subtitles
+
 end

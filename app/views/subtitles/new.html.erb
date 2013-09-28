@@ -1,0 +1,7 @@
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellendus dolorem cumque obcaecati ullam omnis repellat. Est quas error nisi temporibus cum. Consequatur, possimus, nulla accusamus delectus quasi voluptatibus placeat.</p>
+<%= simple_form_for @subtitle, url: :create_new_subtitles do |f| %>
+    <%= f.input :url, as: :hidden %>
+    <%= f.input :email, label: "Insira seu email aqui" %>
+    <%= f.input :language, label: false, collection: ["Português","Inglês","Francês"], default: 1, as: :hidden %>
+    <%= f.submit "Eu quero legenda!", class: "btn" %>
+<% end %>

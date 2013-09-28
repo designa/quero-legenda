@@ -1,7 +1,10 @@
 <%= content_tag :h3, "Showing #{@videos.videos.size.to_s} results for #{@title}" %>
 
 <% @videos.videos.each do |v| %>
- <%= v.title %> <br>
- <%= image_tag(v.thumbnails.first.url) %> <br>
- <%#= v.methods %>
+<%= v.title %> <br>
+<%= link_to v.embed_url, target: "_blank" do %> 
+<%= image_tag(v.thumbnails.first.url) %>
+<% end %>
+<br>
+<%#= v.methods %>
 <% end %>

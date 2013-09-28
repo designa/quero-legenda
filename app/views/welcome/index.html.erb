@@ -40,29 +40,37 @@
   <div class="container">
     <div class="span12">
       <header class="box-title">
-        <h2 class="main-title">Os vídeos <strong>sem legenda</strong> mais desejados!</h2>
+        <h2 class="main-title">Os vídeos <strong>sem legenda</strong> mais acessados!</h2>
         <h3 class="sub-title">Que tal começar a traduzir algum desses? ;)</h3>
       </header>
       <section class="videos-most-accessed">
         <% @most_viewed.videos.each do |video| %>
-        <article class="video-item">
-          <%= link_to nil do %>
-            <%= content_tag :h4, video.title, class: "video-name" %>
-          <% end %>
-          <%= video.embed_html.html_safe %>
-          <ul class="inline">
-            <li>
+          <article class="video-item">
+            <%= link_to(image_tag(video.thumbnails.first.url, class: "video-thumb"), "##{video.unique_id}", data: { toggle: "modal" }) %>
+            <%= link_to video.player_url, class: "video-link" do %>
+              <%= content_tag :h4, video.title, class: "video-name" %>
+            <% end %>
+            <div id="<%= video.unique_id %>" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel"><%= video.title %></h3>
+              </div>
+              <div class="modal-body">
+                <%= video.embed_html.html_safe %>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+              </div>
+            </div>
+            <div class="video-enroll">
               <select name="language" id="language">
                 <option value="fr">Francês</option>
                 <option value="pt-BR">Português (Brasil)</option>
                 <option value="eua">Inglês (EUA)</option>
               </select>
-            </li>
-            <li>
               <a href="" class="btn btn-primary">Quero legenda!</a>
-            </li>
-          </ul>
-        </article>
+            </div>
+          </article>
         <% end %>
       </section>
     </div>

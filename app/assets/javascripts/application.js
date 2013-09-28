@@ -14,10 +14,5 @@
 //= require core/main
 //= require core/utils
 
-//=============================
-// FUNCTIONS
-//=============================
-//= require fn/signUpForm.js
-
 var app = new App(jQuery, document, window);
 app.init();

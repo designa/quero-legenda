@@ -10,8 +10,14 @@ App.prototype.init = function() {
   var that = this;
 
   that.$(function() {
-    that.signUpForm();
+    that.thumbClick();
   });
 
   console.log("It's work!");
+};
+
+App.prototype.thumbClick = function() {
+  $(".video-thumb").on("click", function() {
+    $(this).parent().find("object").toggle();
+  });
 };

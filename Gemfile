@@ -12,7 +12,7 @@ gem "active_decorator"
 gem "delayed_job_active_record"
 gem "daemons"
 gem "will_paginate"
-
+gem "youtube_search"
 
 # This is an assets ghost group :p
   gem 'sass-rails', '~> 4.0.0'

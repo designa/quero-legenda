@@ -1,3 +1,3 @@
-Shibata.prototype.signUpForm = function(first_argument) {
+App.prototype.signUpForm = function(first_argument) {
   // body...
 };

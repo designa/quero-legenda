@@ -1,4 +1,4 @@
-var Shibata = function($, d, w) {
+var App = function($, d, w) {
   var that = this;
 
   that.$ = $;

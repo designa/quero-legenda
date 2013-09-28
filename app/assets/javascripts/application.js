@@ -19,5 +19,5 @@
 //=============================
 //= require fn/signUpForm.js
 
-var app = new Shibata(jQuery, document, window);
+var app = new App(jQuery, document, window);
 app.init();

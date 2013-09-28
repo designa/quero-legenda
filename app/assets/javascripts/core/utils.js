@@ -1,3 +1,3 @@
-Shibata.prototype.emailValidation = function(first_argument) {
+App.prototype.emailValidation = function(first_argument) {
   // body...
 };

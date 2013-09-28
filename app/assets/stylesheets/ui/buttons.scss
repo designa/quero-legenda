@@ -1,12 +1,12 @@
 .btn-shibata {
-  background: $redCorset;
+  background: $color-4;
   color: $white;
   display: block;
   padding: 10px;
 }
 
 .btn-shibata:hover {
-  background: darken($redCorset, 10%);
+  background: darken($color-4, 10%);
   color: darken($white, 5%);
   text-decoration: none;
 }

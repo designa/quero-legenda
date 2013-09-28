@@ -8261,6 +8261,7 @@ Processing by WelcomeController#index as HTML
   Rendered shared/_footer.html.erb (8.2ms)
 Completed 200 OK in 1077ms (Views: 236.1ms | ActiveRecord: 0.0ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 =======
   Rendered /Users/jmscarpa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
   Rendered /Users/jmscarpa/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.9ms)
@@ -11704,4 +11705,22 @@ Processing by SubtitlesController#new as HTML
   Rendered subtitles/new.html.erb within layouts/application (6.0ms)
   Rendered shared/_footer.html.erb (2.6ms)
 Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+>>>>>>> Stashed changes
+=======
+Started GET "/" for 10.0.2.2 at 2013-09-28 18:18:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.0ms)
+  Rendered shared/_footer.html.erb (589.2ms)
+Completed 200 OK in 1971ms (Views: 1079.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 18:21:02 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_footer.html.erb (8.0ms)
+Completed 200 OK in 1139ms (Views: 246.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 18:21:49 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_footer.html.erb (8.2ms)
+Completed 200 OK in 1185ms (Views: 247.8ms | ActiveRecord: 0.0ms)
 >>>>>>> Stashed changes

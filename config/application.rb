@@ -9,6 +9,6 @@ module DesignaDefault
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
 
-    config.assets.paths << Rails.root.join("vendor","assets","components")
+    config.assets.paths << Rails.root.join("vendor","assets","components", "fonts")
   end
 end

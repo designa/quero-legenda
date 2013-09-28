@@ -6937,7 +6937,11 @@ Processing by WelcomeController#index as HTML
 Compiled application.css  (2776ms)  (pid 1749)
   Rendered shared/_footer.html.erb (9.6ms)
 Completed 200 OK in 3284ms (Views: 3282.5ms | ActiveRecord: 0.0ms)
+<<<<<<< Updated upstream
 Started GET "/" for 10.0.2.2 at 2013-09-28 19:35:52 +0200
+=======
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:31:16 +0000
+>>>>>>> Stashed changes
 
 Mysql2::Error (Unknown database 'querolegenda_development'):
   mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
@@ -6948,10 +6952,17 @@ Mysql2::Error (Unknown database 'querolegenda_development'):
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+<<<<<<< Updated upstream
   /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
   /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+=======
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/vagrant/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+>>>>>>> Stashed changes
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
   activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
   activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
@@ -6961,7 +6972,11 @@ Mysql2::Error (Unknown database 'querolegenda_development'):
   activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
   activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
   actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+<<<<<<< Updated upstream
   activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__136650158__call__callbacks'
+=======
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__855493905__call__callbacks'
+>>>>>>> Stashed changes
   activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
   actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
   actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
@@ -6998,6 +7013,7 @@ Mysql2::Error (Unknown database 'querolegenda_development'):
   bin/rails:4:in `<main>'
 
 
+<<<<<<< Updated upstream
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
@@ -7208,6 +7224,23 @@ Migrating to CreateDelayedJobs (20130920221141)
   [1m[35m (0.4ms)[0m  COMMIT
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.4ms)[0m  
+=======
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+  [1m[36m (8.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDelayedJobs (20130920221141)
+  [1m[35m (2.6ms)[0m  CREATE TABLE `delayed_jobs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `priority` int(11) DEFAULT 0 NOT NULL, `attempts` int(11) DEFAULT 0 NOT NULL, `handler` text NOT NULL, `last_error` text, `run_at` datetime, `locked_at` datetime, `failed_at` datetime, `locked_by` varchar(255), `queue` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (12.4ms)[0m  [1mCREATE INDEX `delayed_jobs_priority` ON `delayed_jobs` (`priority`, `run_at`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130920221141')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  
+>>>>>>> Stashed changes
  SELECT fk.referenced_table_name as 'to_table'
  ,fk.referenced_column_name as 'primary_key'
  ,fk.column_name as 'column'
@@ -7218,6 +7251,7 @@ Migrating to CreateDelayedJobs (20130920221141)
  AND fk.table_name = 'delayed_jobs'
  
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `delayed_jobs`[0m
+<<<<<<< Updated upstream
 Started GET "/" for 10.0.2.2 at 2013-09-28 19:38:13 +0200
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Processing by WelcomeController#index as HTML
@@ -7225,3 +7259,69 @@ Processing by WelcomeController#index as HTML
 Compiled application.css  (2308ms)  (pid 1695)
   Rendered shared/_footer.html.erb (570.8ms)
 Completed 200 OK in 4356ms (Views: 3345.8ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:40:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (21.7ms)
+Compiled application.css  (3853ms)  (pid 3783)
+Compiled jquery/jquery.js  (58ms)  (pid 3783)
+Compiled turbolinks.js  (201ms)  (pid 3783)
+Compiled sass-bootstrap/js/bootstrap-alert.js  (1ms)  (pid 3783)
+Compiled sass-bootstrap/js/bootstrap-modal.js  (1ms)  (pid 3783)
+Compiled nprogress.js  (0ms)  (pid 3783)
+Compiled nprogress-turbolinks.js  (0ms)  (pid 3783)
+Compiled core/main.js  (2ms)  (pid 3783)
+Compiled core/utils.js  (1ms)  (pid 3783)
+Compiled fn/signUpForm.js  (1ms)  (pid 3783)
+Compiled application.js  (431ms)  (pid 3783)
+  Rendered shared/_footer.html.erb (584.9ms)
+Completed 200 OK in 6397ms (Views: 5447.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:45:34 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  Rendered shared/_footer.html.erb (8.7ms)
+Completed 200 OK in 1167ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:45:38 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+  Rendered shared/_footer.html.erb (7.5ms)
+Completed 200 OK in 1847ms (Views: 249.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:49:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.5ms)
+  Rendered shared/_footer.html.erb (574.5ms)
+Completed 200 OK in 1999ms (Views: 1066.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:50:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (12.4ms)
+  Rendered shared/_footer.html.erb (582.0ms)
+Completed 200 OK in 1963ms (Views: 1058.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:52:32 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (18.9ms)
+  Rendered shared/_footer.html.erb (8.9ms)
+Completed 200 OK in 1297ms (Views: 259.2ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:52:52 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_footer.html.erb (7.7ms)
+Completed 200 OK in 1198ms (Views: 262.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:52:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+  Rendered shared/_footer.html.erb (9.7ms)
+Completed 200 OK in 1196ms (Views: 244.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:52:59 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_footer.html.erb (13.2ms)
+Completed 200 OK in 1212ms (Views: 316.8ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 17:54:00 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered shared/_footer.html.erb (8.2ms)
+Completed 200 OK in 1077ms (Views: 236.1ms | ActiveRecord: 0.0ms)
+>>>>>>> Stashed changes

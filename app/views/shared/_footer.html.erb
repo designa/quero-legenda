@@ -3,7 +3,7 @@
     <div class="container">
       <div class="span4">
         <%= content_tag :h3, t("footer.newsletter.title") %>
-        <%= content_tag :p, t("footer.newsletter.main_text") %>
+        <p>Cadastre o seu email e fique por dentro de tudo o que acontece por aqui.</p>
         <%= simple_form_for :newsletter, url: nil, html:{class: "form-inline"} do |f| %>
         <div class="controls controls-row">
           <%= f.input :email, label: false, input_html: {class: "span7"} %> &nbsp;

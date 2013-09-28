@@ -16,13 +16,16 @@ body {
   align-items: stretch;
   margin: 8px;
   padding: 12px;
-  .video-enroll {
+  .simple_form.subtitle {
     display: flex;
-    #language, .btn-primary {
+    #language, .select, .btn-primary {
       flex: 1;
     }
+    .select {
+      margin: 0 12px 0 0;
+    }
     #language {
-      margin: 0 12px 10px 0;
+      width: 100%;
     }
   }
 }

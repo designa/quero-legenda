@@ -11724,6 +11724,7 @@ Processing by WelcomeController#index as HTML
   Rendered shared/_footer.html.erb (8.2ms)
 Completed 200 OK in 1185ms (Views: 247.8ms | ActiveRecord: 0.0ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
   [1m[36m (4.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
   [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
@@ -11740,6 +11741,16 @@ Migrating to CreateSubtitleRequests (20130928173229)
   [1m[35m (0.4ms)[0m  COMMIT
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.2ms)[0m  
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateSubtitleRequests (20130928173229)
+  [1m[35m (28.0ms)[0m  CREATE TABLE `subtitles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `url` varchar(255), `email` varchar(255), `language` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130928173229')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1m
+>>>>>>> Stashed changes
  SELECT fk.referenced_table_name as 'to_table'
  ,fk.referenced_column_name as 'primary_key'
  ,fk.column_name as 'column'
@@ -11748,9 +11759,15 @@ Migrating to CreateSubtitleRequests (20130928173229)
  WHERE fk.referenced_column_name is not null
  AND fk.table_schema = 'querolegenda_development'
  AND fk.table_name = 'delayed_jobs'
+<<<<<<< Updated upstream
  
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `delayed_jobs`[0m
   [1m[35m (0.2ms)[0m  
+=======
+ [0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `delayed_jobs`
+  [1m[36m (0.1ms)[0m  [1m
+>>>>>>> Stashed changes
  SELECT fk.referenced_table_name as 'to_table'
  ,fk.referenced_column_name as 'primary_key'
  ,fk.column_name as 'column'
@@ -11759,6 +11776,7 @@ Migrating to CreateSubtitleRequests (20130928173229)
  WHERE fk.referenced_column_name is not null
  AND fk.table_schema = 'querolegenda_development'
  AND fk.table_name = 'subtitles'
+<<<<<<< Updated upstream
  
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `subtitles`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
@@ -11901,3 +11919,49 @@ ActionController::RoutingError (No route matches [GET] "/gift-icons.svg"):
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
   Rendered /home/vagrant/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.8ms)
+=======
+ [0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `subtitles`
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:29:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (783.0ms)
+Compiled application.css  (2397ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (10.1ms)
+Completed 200 OK in 4966ms (Views: 3581.0ms | ActiveRecord: 0.7ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:35:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (198.8ms)
+Compiled application.css  (2264ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (7.3ms)
+Completed 200 OK in 3917ms (Views: 2836.9ms | ActiveRecord: 0.7ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:38:37 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (132.9ms)
+Compiled application.css  (2678ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (9.7ms)
+Completed 200 OK in 4545ms (Views: 3251.0ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:39:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (191.7ms)
+  Rendered shared/_footer.html.erb (7.2ms)
+Completed 200 OK in 1697ms (Views: 425.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:39:50 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (130.5ms)
+Compiled application.css  (2242ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (8.1ms)
+Completed 200 OK in 3939ms (Views: 2761.8ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:41:42 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (134.7ms)
+Compiled application.css  (2320ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (8.0ms)
+Completed 200 OK in 4051ms (Views: 2791.7ms | ActiveRecord: 0.0ms)
+Started GET "/" for 10.0.2.2 at 2013-09-28 20:42:10 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (131.4ms)
+Compiled application.css  (2266ms)  (pid 1798)
+  Rendered shared/_footer.html.erb (8.1ms)
+Completed 200 OK in 3896ms (Views: 2732.0ms | ActiveRecord: 0.0ms)
+>>>>>>> Stashed changes

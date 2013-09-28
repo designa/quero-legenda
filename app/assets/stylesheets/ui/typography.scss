@@ -1,0 +1,39 @@
+//==========================================================
+// ICON FONT
+//==========================================================
+.gift-twitter:before, .gift-mail:before, .gift-facebook:before, .gift-file:before, .gift-search:before, .gift-gift:before {
+  font-family: 'gift-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.gift-twitter:before {
+  content: "\e000";
+  font-size: 40px;
+}
+.gift-mail:before {
+  content: "\e003";
+  font-size: 40px;
+}
+
+.gift-facebook:before {
+  content: "\e004";
+  font-size: 40px;
+}
+
+.gift-file:before {
+  content: "\e001";
+  font-size: 40px;
+}
+.gift-search:before {
+  content: "\e002";
+  font-size: 40px;
+}
+.gift-gift:before {
+  content: "\e005";
+  font-size: 40px;
+}

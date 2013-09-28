@@ -1,0 +1,21 @@
+# README
+
+### This is a Rails Project, Mate (:
+
+To run it, u 'll need to:
+
+* Use, at least, **Ruby 2**
+
+* alse need to use, **Rails 4**, **MySQL**, **Node**
+
+* always after clone ou pull this repo, run **Bundle install** and **npm install**
+
+* For database u just have to run **Rake reset**
+
+* This project don't have test **yet**
+
+* If u're in develpment enviroment and want send mails run **rake jobs:workoff**
+
+* For deploy, be sure u have right access and run **cap deploy**
+
+## Be happy (:

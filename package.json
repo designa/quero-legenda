@@ -1,0 +1,14 @@
+{
+  "name": "designa-projects",
+  "version": "0.0.1",
+  "description": "Default structure for projects",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:jmscarpa/DesignaDefault.git"
+  },
+  "dependencies": {
+    "bower": "~1.2.6"
+    },
+  "author": "Eduardo Rabelo",
+  "license": "MIT"
+}

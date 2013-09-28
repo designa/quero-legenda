@@ -1,0 +1,19 @@
+{
+  "name": "designa-projects",
+  "version": "0.0.1",
+  "authors": [
+    "Eduardo Rabelo <oieduardorabelo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "sass-bootstrap": "2.3.2"
+  }
+}

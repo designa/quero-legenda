@@ -1,0 +1,27 @@
+pt-BR:
+  footer:
+    newsletter:
+      title: "Saiba todas as novidades!"
+      main_text: "Cadastre o seu email para receber dicas para o seu casamento, notícias com as novidades da nossa loja e muito mais."
+
+    social:
+      title: "Siga-nos nas redes sociais"
+      
+    contact:
+      title: "lorem ipsum dolor"
+      city: "sit/AM"
+      address: "lorem ipsum dolor, 00 - dolor"
+      postal_code: "CEP 00000-000"
+      phone: "+00 00 000000"
+
+  simple_form:
+    labels:
+      newsletter:
+        email: "E-mail"
+    placeholders:
+      newsletter:
+        email: "Por favor, informe seu e-mail"
+  helpers:
+    submit:
+      newsletter:
+        create: "Enviar"

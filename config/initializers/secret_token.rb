@@ -1,0 +1,1 @@
+DesignaDefault::Application.config.secret_key_base = '1ac5e4767a395ca701d0128db69fc39af17df05a7aabed544037b78a2d86551e2653c570156067a3f96d75af485b9f5c8297646147d85bb4d1d46f9c99a3f35d'

@@ -1,0 +1,87 @@
+body {
+  font-family: $font-default;
+  font-size: 1.125em;
+  line-height: 1.6;
+}
+
+.main-logo {
+  display: block;
+  margin: 12px 0 24px;
+}
+
+.default-banner {
+  height: 700px;
+}
+
+.welcome .default-banner {
+  background: asset-url("banner.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+.default-access {
+  background-color: $redCorset;
+}
+
+.def-link {
+  color: $white;
+  display: block;
+  height: 255px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  .def-link-desc {
+    font-size: 16px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, .1);
+    color: darken($white, 5%);
+    text-decoration: none;
+  }
+  &:before {
+    display: block;
+    font-size: 64px;
+    margin: 0 auto;
+  }
+}
+
+%section-padding {
+  padding: 128px 0;
+}
+
+.what-gift-card {
+  @extend %section-padding;
+  background: $white asset-url("giftcard.png") no-repeat right center fixed;
+}
+
+.start-now {
+  @extend %section-padding;
+  background-color: darken($white, 5%);
+  .def-badge {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@mixin background-badge($image){
+  background-image: asset-url($image);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.def-badge {
+  display: block;
+  height: 195px;
+  padding: 0 0 32px 0;
+  text-align: center;
+  width: 169px;
+  &:hover {
+    background: rgba(0, 0, 0, .1);
+    text-decoration: none;
+  }
+  &.create-list {
+    @include background-badge("badges/grooms.png");
+  }
+  &.gift {
+    @include background-badge("badges/gift.png");
+  }
+}

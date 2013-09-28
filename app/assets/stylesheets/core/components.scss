@@ -1,0 +1,38 @@
+.box-title {
+  .main-title, .sub-title {
+    font-weight: 400;
+    margin: 0;
+  }
+  .main-title {
+    font-size: 2.4em;
+  }
+  .sub-title {
+    color: lighten($black, 50%);
+    position: relative;
+    top: -8px;
+  }
+}
+
+.box-tips {
+  background: $redCorset asset-url("lamp.png") no-repeat 16px center;
+  color: $white;
+  padding: 48px 0;
+  .box-desc {
+    margin: 0 8px 0 128px;
+  }
+}
+
+.narrow{
+  width: 70%;
+}
+.get-away{
+  padding: 20px;
+}
+.lead{
+  font-size: 1.875em;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+.content-section{
+  min-height: 500px;
+}

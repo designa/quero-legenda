@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>DesignaDefault</title>
+
+    <%= favicon_link_tag "favicon.ico" %>
+
+    <meta name="viewport" content="width=1024px">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://designadefaultproject.com.br">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+
+  </head>
+  <body class="<%= params[:controller] %>">
+    <%= render 'shared/header' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </body>
+</html>

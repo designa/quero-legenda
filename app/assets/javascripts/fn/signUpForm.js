@@ -1,0 +1,3 @@
+Shibata.prototype.signUpForm = function(first_argument) {
+  // body...
+};

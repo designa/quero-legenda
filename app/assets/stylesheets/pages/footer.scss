@@ -1,0 +1,16 @@
+.main-footer {
+  background: $redCorset;
+  color: #ffffff;
+}
+.news-area {
+  padding: 48px 0;
+}
+.address-area {
+  background: darken($redCorset, 10%);
+}
+.address-item {
+  padding: 36px 12px 24px;
+  .lead {
+    font-size: 1.5em;
+  }
+}

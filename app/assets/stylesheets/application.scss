@@ -1,0 +1,26 @@
+//==========================================================
+// BASE: custom variables and third party libs
+//==========================================================
+@import "base/variables";
+@import "base/vendors";
+$nprogress-color: $redCorset;
+@import "nprogress";
+
+//==========================================================
+// CORE: define components, mixins, custom fonts, etc
+//==========================================================
+@import "core/components";
+@import "core/custom-fonts";
+
+//==========================================================
+// USER INTERFACE: applying colors, typography, etc
+//==========================================================
+@import "ui/typography";
+@import "ui/buttons";
+
+//==========================================================
+// PAGES: pages structure
+//==========================================================
+@import "pages/home";
+@import "pages/header";
+@import "pages/footer";

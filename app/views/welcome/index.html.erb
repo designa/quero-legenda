@@ -1,0 +1,66 @@
+<div class="default-banner"></div>
+
+<section class="row-fluid default-access">
+  <div class="container">
+    <div class="span6">
+      <a href="#" class="def-link gift-file">
+        <%= content_tag :h2, t("welcome.title") %>
+        <%= content_tag :p, t("welcome.lorem") %>
+      </a>
+    </div>
+    <div class="span6">
+      <a href="#" class="def-link gift-search">
+        <%= content_tag :h2, t("welcome.title") %>
+        <%= content_tag :p, t("welcome.lorem") %>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="row-fluid what-gift-card">
+  <div class="container">
+    <div class="span6 offset1">
+      <header class="box-title">
+        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
+        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
+      </header>
+      <section>
+        <%= content_tag :p, t("welcome.lorem") %>
+      </section>
+      <footer>
+      <%= link_to t("welcome.call_to_action"), nil, class: "btn btn-large" %>
+      </footer>
+    </div>
+  </div>
+</section>
+
+<section class="row-fluid start-now">
+  <div class="container">
+    <div class="span6">
+      <header class="box-title">
+        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
+        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
+      </header>
+      <section>
+        <%= content_tag :p, t("welcome.lorem") %>
+      </section>
+      <div class="row-fluid">
+        <div class="span6">
+        </div>
+        <div class="span6">
+        </div>
+      </div>
+    </div>
+    <div class="span6">
+      <header class="box-title">
+        <%= content_tag :h2, t("welcome.bold_title_html"), class: "main-title" %>
+        <%= content_tag :h3, t("welcome.subtitle"), class: "sub-title" %>
+      </header>
+      <div class="box-tips">
+        <div class="box-desc">
+          <%= content_tag :p, t("welcome.lorem") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

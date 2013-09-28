@@ -1,4 +1,7 @@
+<%= render "shared/header" %>
+<div class="container text-center">
 <%= simple_form_for :search do |f| %>
-  <%= f.input :title, label: "Digite o nome do vídeo" %>
+  <%= f.input :title, label: "Digite o nome do vídeo", input_html: {class: "input-your-email-here"}  %>
   <%= f.submit %>
 <% end %>
+</div>

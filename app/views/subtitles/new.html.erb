@@ -1,7 +1,15 @@
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellendus dolorem cumque obcaecati ullam omnis repellat. Est quas error nisi temporibus cum. Consequatur, possimus, nulla accusamus delectus quasi voluptatibus placeat.</p>
-<%= simple_form_for @subtitle, url: :create_new_subtitles do |f| %>
+<%= render "shared/header" %>
+<div class="container text-center">
+  <p> Caro usuário, para que possamos registrar sua solicitação, por favor insira seu email abaixo. </p>
+  <p> Assim que a legenda para o vídeo escolhido for disponibilizada você será notificado por este email. </p>
+<div class="row-fluid">
+  <div class="span12">
+    <%= simple_form_for @subtitle, url: :create_new_subtitles do |f| %>
     <%= f.input :url, as: :hidden %>
-    <%= f.input :email, label: "Insira seu email aqui" %>
+    <%= f.input :email, label: "Insira seu email aqui", input_html: {class: "input-your-email-here"} %>
     <%= f.input :language, label: false, collection: ["Português","Inglês","Francês"], default: 1, as: :hidden %>
     <%= f.submit "Eu quero legenda!", class: "btn" %>
 <% end %>
+  </div>
+</div>
+</div>

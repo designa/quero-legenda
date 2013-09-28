@@ -1,4 +1,6 @@
-<%= content_tag :h3, "Showing #{@videos.videos.size.to_s} results for #{@title}" %>
+<%= render "shared/header" %>
+<div class="container">
+  <%= content_tag :h3, "Showing #{@videos.videos.size.to_s} results for #{@title}" %>
 
 <% @videos.videos.each do |v| %>
 <%= v.title %> <br>
@@ -8,3 +10,4 @@
 <br>
 <%#= v.methods %>
 <% end %>
+</div>

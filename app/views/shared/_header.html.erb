@@ -1,12 +1,9 @@
 <header class="main-header">
-  <div class="container">
     <div class="row-fluid">
-      <div class="span6">
-        <%= link_to(image_tag("logo.png", :alt => "Shibata Casa&Presente - Lista de Casamento"), root_path, class: "main-logo") %>
-      </div>
-      <div class="span6">
-      <%= link_to "Procurar Vídeo", :search_video %>
+      <div class="span12">
+      <%= link_to "Home", :search_video, class: "menu-item" %>
+      <%= link_to "Procurar Vídeo", :search_video, class: "menu-item" %>
       </div>
     </div>
-  </div>
 </header>
+<%= image_tag "small_banner.jpg" %>

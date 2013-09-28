@@ -1,8 +1,0 @@
-API key:  AIzaSyCS-iiCgZ1yxvkfDXW364ViPJ-bKPk2IKQ
-
-Client ID:  
-4981587102.apps.googleusercontent.com
-Email address:  
-4981587102@developer.gserviceaccount.com
-Client secret:  
-ybIiwlSVNIjPmRe3EFvbyb-N

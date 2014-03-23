@@ -2,7 +2,7 @@
 
 [Quero Legenda](http://querolegenda.com.br), projeto desenvolvido para o [Youtube Developer Day](https://plus.google.com/events/cdcj9ddk78gnhi04lq1q9u4hgic), na sede do Google Brasil, dia 28 de Setembro de 2013,
 
-Quero Legenda é uma plataforma que conecta pessoas que querem ter legendas na sua lingua nativa e pessoas que querem traduzir, usamos a API 3.0 do Youtube para fazer a plataforma,
+Quero Legenda é uma plataforma que conecta pessoas que querem ter legendas na sua língua nativa e pessoas que querem traduzir,
 
 Desenvolvido por: [Diego Sieg](https://github.com/diegosieg), [Eduardo Rabelo](https://github.com/oieduardorabelo), [Gabriel Lobato](https://facebook.com/gabriel.lobato.35), [João Scarpa](https://github.com/jmscarpa) e [Michel Amaral](https://github.com/michelamaral)
 
@@ -12,10 +12,11 @@ Utilizamos as seguintes ferramentas:
 
 - `Ruby On Rails`, na versão **4.0.0**
 - `Ruby`, na versã **2.0.0**
+- Youtube API 3.0
 
 ### Premiação
 
-O [Quero Legenda](http://querolegenda.com.br) ganhou na categoria de melhor idéia de produto e design [Youtube Developer Day](https://plus.google.com/events/cdcj9ddk78gnhi04lq1q9u4hgic)
+O [Quero Legenda](http://querolegenda.com.br) ganhou na categoria de melhor idéia de produto e design no [Youtube Developer Day](https://plus.google.com/events/cdcj9ddk78gnhi04lq1q9u4hgic)
 
 # Licença
 
